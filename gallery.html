@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse Sweetbite's gallery of custom cakes, pastries, and baking class events. See our beautiful creations and happy moments.">
+    <meta name="keywords" content="cake gallery, custom cakes, wedding cakes, birthday cakes, baking class photos, pastry showcase">
+    <title>Gallery - Sweetbite Cake Shop & Baking Institute</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sweetbite.com/gallery.html">
+    <meta property="og:title" content="Gallery - Sweetbite Cake Shop & Baking Institute">
+    <meta property="og:description" content="Browse Sweetbite's gallery of custom cakes, pastries, and baking class events. See our beautiful creations and happy moments.">
+    <meta property="og:image" content="https://sweetbite.com/images/sweetbite-gallery.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sweetbite.com/gallery.html">
+    <meta property="twitter:title" content="Gallery - Sweetbite Cake Shop & Baking Institute">
+    <meta property="twitter:description" content="Browse Sweetbite's gallery of custom cakes, pastries, and baking class events. See our beautiful creations and happy moments.">
+    <meta property="twitter:image" content="https://sweetbite.com/images/sweetbite-gallery.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Sweetbite Logo" class="logo"> Sweetbite
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="display-4 fw-bold text-white">Our Gallery</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Gallery Filters -->
+    <section class="py-4">
+        <div class="container">
+            <div class="text-center mb-4">
+                <div class="btn-group filter-buttons" role="group">
+                    <button type="button" class="btn btn-outline-primary active" data-filter="all">All</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="wedding">Wedding Cakes</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="birthday">Birthday Cakes</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="pastries">Pastries</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="classes">Baking Classes</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="events">Events</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Content -->
+    <section class="py-3">
+        <div class="container">
+            <div class="row gallery-container">
+                <!-- Wedding Cakes -->
+                <div class="col-md-4 col-sm-6 gallery-item wedding" data-category="wedding">
+                    <div class="gallery-img-container">
+                        <a href="images/gallery/wedding-cake-1.jpg" data-lightbox="gallery" data-title="Elegant White Wedding Cake">
+                            <img src="images/gallery/wedding-cake-1-thumb.jpg" alt="Elegant White Wedding Cake" class="img-fluid gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h5>Elegant White Wedding Cake</h5>
+                                    <p>Three-tier vanilla cake with buttercream frosting</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-item wedding" data-category="wedding">
+                    <div class="gallery-img-container">
+                        <a href="images/gallery/wedding-cake-2.jpg" data-lightbox="gallery" data-title="Floral Wedding Cake">
+                            <img src="images/gallery/wedding-cake-2-thumb.jpg" alt="Floral Wedding Cake" class="img-fluid gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h5>Floral Wedding Cake</h5>
+                                    <p>Four-tier cake with fresh flowers and gold accents</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-item wedding" data-category="wedding">
+                    <div class="gallery-img-container">
+                        <a href="images/gallery/wedding-cake-3.jpg" data-lightbox="gallery" data-title="Naked Wedding Cake">
+                            <img src="images/gallery/wedding-cake-3-thumb.jpg" alt="Naked Wedding Cake" class="img-fluid gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h5>Naked Wedding Cake</h5>
+                                    <p>Rustic three-tier cake with fresh berries</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Birthday Cakes -->
+                <div class="col-md-4 col-sm-6 gallery-item birthday" data-category="birthday">
+                    <div class="gallery-img-container">
+                        <a href="images/gallery/birthday-cake-1.jpg" data-lightbox="gallery" data-title="Princess Birthday Cake">
+                            <img src="images/gallery/birthday-cake-1-thumb.jpg" alt="Princess Birthday Cake" class="img-fluid gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h5>Princess Birthday Cake</h5>
+                                    <p>Two-tier pink cake with crown topper</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-item birthday" data-category="birthday">
+                    <div class="gallery-img-container">
+                        <a href="images/gallery/birthday-cake-2.jpg" data-lightbox="gallery" data-title="Superhero Birthday Cake">
+                            <img src="images/gallery/birthday-cake-2-thumb.jpg" alt="Superhero Birthday Cake" class="img-fluid gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h5>Superhero Birthday Cake</h5>
+                                    <p>Chocolate cake with superhero figurines</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-item birthday" data-category="birthday">
+                    <div class="gallery-img-container">
+                        <a href="images/gallery/birthday-cake-3.jpg" data-lightbox="gallery" data-title="Number Birthday Cake">
+                            <img src="images/gallery/birthday-cake-3-thumb.jpg" alt="Number Birthday Cake" class="img-fluid gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h5>Number Birthday Cake</h5>
+                                    <p>Custom number-shaped cake with colorful sprinkles</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Pastries -->
+                <div class="col-md-4 col-sm-6 gallery-item pastries" data-category="pastries">
+                    <div class="gallery-img-container">
+                        <a href="images/gallery/pastry-1.jpg" data-lightbox="gallery" data-title="French Macarons">
+                            <img src="images/gallery/pastry-1-thumb.jpg" alt="French Macarons" class="img-fluid gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h5>French Macarons</h5>
+                                    <p>Assorted flavors of delicate French macarons</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-item pastries" data-category="pastries">
+                    <div class="gallery-img-container">
+                        <a href="images/gallery/pastry-2.jpg" data-lightbox="gallery" data-title="Eclairs">
+                            <img src="images/gallery/pastry-2-thumb.jpg" alt="Eclairs" class="img-fluid gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h5>Eclairs</h5>
+                                    <p>Classic chocolate and vanilla eclairs</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-item pastries" data-category="pastries">
+                    <div class="gallery-img-container">
+                        <a href="images/gallery/pastry-3.jpg" data-lightbox="gallery" data-title="Fruit Tarts">
+                            <img src="images/gallery/pastry-3-thumb.jpg" alt="Fruit Tarts" class="img-fluid gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h5>Fruit Tarts</h5>
+                                    <p>Fresh seasonal fruit on vanilla custard</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Baking Classes -->
+                <div class="col-md-4 col-sm-6 gallery-item classes" data-category="classes">
+                    <div class="gallery-img-container">
+                        <a href="images/gallery/class-1.jpg" data-lightbox="gallery" data-title="Cake Decorating Class">
+                            <img src="images/gallery/class-1-thumb.jpg" alt="Cake Decorating Class" class="img-fluid gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h5>Cake Decorating Class</h5>
+                                    <p>Students learning advanced piping techniques</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-item classes" data-category="classes">
+                    <div class="gallery-img-container">
+                        <a href="images/gallery/class-2.jpg" data-lightbox="gallery" data-title="Bread Baking Workshop">
+                            <img src="images/gallery/class-2-thumb.jpg" alt="Bread Baking Workshop" class="img-fluid gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h5>Bread Baking Workshop</h5>
+                                    <p>Students kneading dough for artisan breads</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-item classes" data-category="classes">
+                    <div class="gallery-img-container">
+                        <a href="images/gallery/class-3.jpg" data-lightbox="gallery" data-title="Kids Baking Class">
+                            <img src="images/gallery/class-3-thumb.jpg" alt="Kids Baking Class" class="img-fluid gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h5>Kids Baking Class</h5>
+                                    <p>Children decorating their own cupcakes</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Events -->
+                <div class="col-md-4 col-sm-6 gallery-item events" data-category="events">
+                    <div class="gallery-img-container">
+                        <a href="images/gallery/event-1.jpg" data-lightbox="gallery" data-title="Baking Competition">
+                            <img src="images/gallery/event-1-thumb.jpg" alt="Baking Competition" class="img-fluid gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h5>Baking Competition</h5>
+                                    <p>Annual Sweetbite baking competition winners</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-item events" data-category="events">
+                    <div class="gallery-img-container">
+                        <a href="images/gallery/event-2.jpg" data-lightbox="gallery" data-title="Charity Bake Sale">
+                            <img src="images/gallery/event-2-thumb.jpg" alt="Charity Bake Sale" class="img-fluid gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h5>Charity Bake Sale</h5>
+                                    <p>Fundraising event for local food bank</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-item events" data-category="events">
+                    <div class="gallery-img-container">
+                        <a href="images/gallery/event-3.jpg" data-lightbox="gallery" data-title="Anniversary Celebration">
+                            <img src="images/gallery/event-3-thumb.jpg" alt="Anniversary Celebration" class="img-fluid gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h5>Anniversary Celebration</h5>
+                                    <p>Sweetbite's 10th anniversary celebration</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Gallery -->
+            <div class="mt-5">
+                <h2 class="display-5 fw-bold text-center mb-4">Video Gallery</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="video-container">
+                            <a href="videos/cake-decorating.mp4" data-lightbox="video" data-title="Cake Decorating Tutorial">
+                                <div class="video-thumbnail">
+                                    <img src="images/video-thumbnails/cake-decorating.jpg" alt="Cake Decorating Tutorial" class="img-fluid">
+                                    <div class="play-button">
+                                        <i class="fas fa-play-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="video-info p-3">
+                                    <h5>Cake Decorating Tutorial</h5>
+                                    <p>Learn professional cake decorating techniques</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="video-container">
+                            <a href="videos/bread-baking.mp4" data-lightbox="video" data-title="Artisan Bread Baking">
+                                <img src="images/video-thumbnails/bread-baking.jpg" alt="Artisan Bread Baking" class="img-fluid">
+                                <div class="play-button">
+                                    <i class="fas fa-play-circle"></i>
+                                </div>
+                                <div class="video-info p-3">
+                                    <h5>Artisan Bread Baking</h5>
+                                    <p>Master the art of baking artisan bread</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="video-container">
+                            <a href="videos/pastry-making.mp4" data-lightbox="video" data-title="French Pastry Making">
+                                <img src="images/video-thumbnails/pastry-making.jpg" alt="French Pastry Making" class="img-fluid">
+                                <div class="play-button">
+                                    <i class="fas fa-play-circle"></i>
+                                </div>
+                                <div class="video-info p-3">
+                                    <h5>French Pastry Making</h5>
+                                    <p>Create delicate French pastries at home</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="text-center mt-5">
+                <h2 class="display-5 fw-bold mb-4">Inspired? Get in Touch!</h2>
+                <p class="lead mb-4">Whether you want to order a custom creation or join one of our baking classes, we're here to help.</p>
+                <div class="d-flex justify-content-center flex-wrap gap-3">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+                    <a href="tel:+1234567890" class="btn btn-outline-primary btn-lg">Call Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="mb-3">Sweetbite</h5>
+                    <p>Premier cake shop and baking institute serving our community since 2010.</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/sweetbite" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/sweetbite" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/sweetbite" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="https://youtube.com/sweetbite" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white">About Us</a></li>
+                        <li class="mb-2"><a href="gallery.html" class="text-white">Gallery</a></li>
+                        <li class="mb-2"><a href="testimonials.html" class="text-white">Testimonials</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-3">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Baker Street, Culinary City</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> <a href="tel:+1234567890" class="text-white">+1 (234) 567-890</a></li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> <a href="mailto:info@sweetbite.com" class="text-white">info@sweetbite.com</a></li>
+                        <li class="mb-2"><i class="fas fa-clock me-2"></i> Mon-Sat: 9am-7pm, Sun: 10am-5pm</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-white">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 Sweetbite. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/9655850466" class="whatsapp-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+919655850466" class="call-btn">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
